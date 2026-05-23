@@ -301,15 +301,52 @@
 
           <li class="dropdown">
             <a href="#">Research ▼</a>
-            <div class="dropdown-content">
-              <a href="#">Publications</a>
-              <a href="#">Fellows</a>
-              <a href="#">Scholar in Residence</a>
-              <a href="#">Funded Projects</a>
-              <a href="#">Quantum Testbed</a>
-              <a href="#">Labs/Centers</a>
-              <a href="#">Resources</a>
-            </div>
+              <div class="dropdown-content">
+                <a href="#">Publications</a>
+                <a href="#">Fellows</a>
+                <a href="#">Scholar in Residence</a>
+                <a href="#">Funded Projects</a>
+                <a href="#">Quantum Testbed</a>
+                
+                <div style="position:relative;">
+                  <a href="javascript:void(0)" onclick="toggleLabs()" style="display:block; font-weight:600;">
+                    Labs/Centers ▸
+                  </a>
+                  <div id="labsMenu" style="display:none; padding-left:15px;">
+                     <a 
+      href="https://coas.howard.edu/research/research-initiatives/hbcu-quantum-howard-university"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      IBM-HBCU Quantum Center
+    </a>
+
+    <a 
+      href="https://www.qresearch.info/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Quantum Research Lab
+    </a>
+
+
+
+                  </div>
+                </div>
+
+                <a href="#">Resources</a>
+              </div>
+
+<script>
+function toggleLabs() {
+  const menu = document.getElementById('labsMenu');
+  if (menu.style.display === 'none') {
+    menu.style.display = 'block';
+  } else {
+    menu.style.display = 'none';
+  }
+}
+</script>
           </li>
 
           <li><a href="#">Workforce Development</a></li>
@@ -323,7 +360,7 @@
               <a href="#">Advisory Board</a>
               <a href="#">Annual Reports</a>
               <a href="#">Annual Symposium</a>
-              <a href="#"><strong>Institute Director:</strong></a>
+              <a href="#"><strong>Institute Director:</strong> Dr. DBR</a>
             </div>
           </li>
         </ul>
@@ -362,7 +399,7 @@
 
         <br>
 
-        <h4>Dr. Danda B. Rawat</h4>
+        <h4>Dr. DBR</h4>
         <p>Institute Director</p>
       </div>
     </div>
@@ -372,7 +409,7 @@
     <div class="card">
       <h3>Research Excellence</h3>
       <p>
-Advancing research and innovation in quantum computing, cybersecurity (including quantum security and post-quantum cryptography), quantum machine learning, quantum communications and networking, quantum sensing technologies, quantum RF sensing, quantum noise and decoherence mitigation, and quantum error-correction methodologies, as well as the development of quantum sensors and quantum clocks for position, navigation, and timing (PNT) applications.
+Advancing research and innovation in quantum computing, cybersecurity, quantum machine learning, quantum communications & networking, quantum sensing technologies, quantum RF sensing, quantum noise/decoherence mitigation & quantum error-correction methods, as well as the development of quantum sensors for PNT.
       </p>
     </div>
 
@@ -387,6 +424,7 @@ Recruiting, retaining, mentoring, and training future researchers, engineers, an
       <h3>Global Collaboration</h3>
       <p>
 Building strategic partnerships with academia, industry, and government to accelerate the development, translation, and deployment of quantum innovations, while fostering collaborative research, shared expertise, and technology transfer across the quantum ecosystem.
+
       </p>
     </div>
   </section>
@@ -432,7 +470,7 @@ Building strategic partnerships with academia, industry, and government to accel
 
       <div>
         <h4>Leadership</h4>
-        <p>Institute Director: Dr. Danda B. Rawat</p>
+        <p>Director: Dr. DBR</p>
       </div>
     </div>
 
