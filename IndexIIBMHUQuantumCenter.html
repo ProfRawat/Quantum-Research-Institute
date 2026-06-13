@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IBM Quantum Center at Howard University</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Tailwind CDN (for quick prototype) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <!-- Navbar -->
+  <header class="bg-slate-900 text-white">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="font-semibold text-lg">IBM Quantum Center at Howard University</div>
+      <nav class="space-x-4 text-sm">
+        <a href="#home" class="hover:text-blue-200">Home</a>
+        <a href="#about" class="hover:text-blue-200">About</a>
+        <a href="#director" class="hover:text-blue-200">Director</a>
+        <a href="#pi" class="hover:text-blue-200">Center PI</a>
+        <a href="#research" class="hover:text-blue-200">Research</a>
+        <a href="#stats" class="hover:text-blue-200">Dashboards</a>
+        <a href="#publications" class="hover:text-blue-200">Publications</a>
+        <a href="#contact" class="hover:text-blue-200">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-8 space-y-16">
+    <!-- Hero / Home -->
+    <section id="home" class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-3xl md:text-4xl font-bold mb-4">
+          IIBM Quantum Center at Howard University
+        </h1>
+        <p class="text-sm uppercase tracking-wide text-slate-500 mb-2">
+          Building a diverse quantum workforce for the future
+        </p>
+        <p class="mb-4 text-slate-700">
+          A multi-year partnership between IBM and 27 HBCUs, advancing Quantum Information
+          Science and Engineering (QISE) through research, education, and community.
+        </p>
+        <div class="flex flex-wrap gap-3 mt-4">
+          <a href="#research"
+             class="inline-flex items-center px-4 py-2 rounded bg-[#003A63] text-white text-sm font-medium hover:bg-[#002B4A]">
+            Explore Research
+          </a>
+          <a href="#stats"
+             class="inline-flex items-center px-4 py-2 rounded border border-[#003A63] text-[#003A63] text-sm font-medium hover:bg-blue-50">
+            View Impact
+          </a>
+          <a href="#publications"
+             class="inline-flex items-center px-4 py-2 rounded border border-slate-300 text-slate-700 text-sm font-medium hover:bg-slate-100">
+            Publications
+          </a>
+          <a href="#contact"
+             class="inline-flex items-center px-4 py-2 rounded border border-slate-300 text-slate-700 text-sm font-medium hover:bg-slate-100">
+            Contact Us
+          </a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="rounded-xl bg-slate-900 text-white p-6 shadow-lg">
+          <p class="text-xs uppercase tracking-wide text-slate-400 mb-2">
+            Program at a Glance (2020–Now)
+          </p>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <p class="text-slate-400">HBCU Member Institutions</p>
+              <p class="text-2xl font-semibold">27</p>
+            </div>
+            <div>
+              <p class="text-slate-400">IBM Quantum Network Users</p>
+              <p class="text-2xl font-semibold">900+</p>
+            </div>
+            <div>
+              <p class="text-slate-400">Students in QISE Research</p>
+              <p class="text-2xl font-semibold">180+</p>
+            </div>
+            <div>
+              <p class="text-slate-400">Faculty Engaged</p>
+              <p class="text-2xl font-semibold">80+</p>
+            </div>
+            <div>
+              <p class="text-slate-400">External Funding Leveraged</p>
+              <p class="text-2xl font-semibold">$20M+</p>
+            </div>
+            <div>
+              <p class="text-slate-400">Program Duration</p>
+              <p class="text-2xl font-semibold">2020– Now</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Center PI's Message -->
+    <section id="director" class="border-t border-slate-200 pt-8">
+      <h2 class="text-2xl font-semibold mb-4">Center PI's Message</h2>
+      <div class="grid md:grid-cols-3 gap-6 items-start">
+        <div class="md:col-span-1">
+          <div class="w-32 h-32 rounded-full bg-slate-300 mb-3"></div>
+          <p class="font-semibold">Dr. Danda B. Rawat</p>
+          <p class="text-sm text-slate-500">Center Principal Investigator</p>
+        </div>
+        <div class="md:col-span-2">
+          <p class="text-slate-700 mb-3">
+            Welcome to the IBM-HBCU Quantum Center. Our mission is to build a sustainable,
+            diverse pipeline of quantum talent by empowering HBCU students and faculty to
+            lead in Quantum Information Science and Engineering.
+          </p>
+          <details class="mt-2">
+            <summary class="cursor-pointer text-sm text-[#003A63] font-medium">
+              Read Full Message
+            </summary>
+            <div class="mt-2 text-sm text-slate-700 space-y-2">
+              <p>
+                Through coordinated access to IBM Quantum hardware, faculty development,
+                student research programs, and national collaborations, the Center has
+                created one of the largest quantum education and research initiatives
+                across HBCUs.
+              </p>
+              <p>
+                As we look beyond 2026, our focus is on sustaining this ecosystem,
+                expanding research capacity, and ensuring that Black students and
+                institutions remain central to the quantum future.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- About the Center -->
+    <section id="about" class="border-t border-slate-200 pt-8">
+      <h2 class="text-2xl font-semibold mb-4">About the Center</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="space-y-3 text-sm text-slate-700">
+          <h3 class="font-semibold text-slate-900">History & Establishment</h3>
+          <p>
+            The IBM-HBCU Quantum Center was established in 2020 as a partnership between IBM
+            and a consortium of HBCUs, with Howard University serving as the lead institution.
+          </p>
+          <p>
+            The Center was formally announced at the IBM Quantum Network Summit and designed
+            as a multiyear investment to prepare and develop Black talent from all STEM
+            disciplines for the quantum future.
+          </p>
+          <h3 class="font-semibold text-slate-900 mt-4">Vision & Mission</h3>
+          <ul class="list-disc list-inside">
+            <li>Increase the number of Black students educated in QISE (quantum systems and technologies).</li>
+            <li>Strengthen QISE research efforts at HBCUs.</li>
+            <li>Provide scholarships, fellowships, and internships.</li>
+            <li>Empower HBCUs to lead in the quantum workforce.</li>
+          </ul>
+        </div>
+        <div class="space-y-3 text-sm text-slate-700">
+          <h3 class="font-semibold text-slate-900">Strategic Pillars</h3>
+          <ul class="list-disc list-inside">
+            <li><span class="font-semibold">Build:</span> Foster community and belonging in quantum spaces.</li>
+            <li><span class="font-semibold">Support:</span> Enable research through funding, mentorship, and access.</li>
+            <li><span class="font-semibold">Connect:</span> Link talent to researchers, institutions, and industry.</li>
+          </ul>
+          <h3 class="font-semibold text-slate-900 mt-4">Member Institutions & Regions</h3>
+          <p>
+            The Center encompasses 27 HBCU member institutions organized into five geographic
+            regions (Mid-Atlantic, Virginia, Carolinas, Southeastern, Southwestern), each
+            with designated research focus areas in quantum computing, hardware, education,
+            and fundamental science.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Center PI Profile -->
+    <section id="pi" class="border-t border-slate-200 pt-8">
+      <h2 class="text-2xl font-semibold mb-4">Center PI: Dr. Danda B. Rawat</h2>
+      <div class="grid md:grid-cols-3 gap-6 text-sm text-slate-700">
+        <div>
+          <div class="w-32 h-32 rounded-full bg-slate-300 mb-3"></div>
+          <p class="font-semibold">Dr. Danda B. Rawat</p>
+          <p class="text-slate-500">Principal Investigator</p>
+        </div>
+        <div class="md:col-span-2 space-y-2">
+          
+<p><span class="font-semibold">Biography:</span> Dr. Danda B. Rawat is Associate Dean for Research & Graduate Studies and Full Professor in the Department of Electrical Engineering & Computer Science at Howard University. He is the Founding Director of the Howard University Data Science & Cybersecurity Center, Founding Director of the DoD Center of Excellence in Artificial Intelligence & Machine Learning (CoE‑AIML), Director of the Quantum Research (QResearch) Lab, TruAI Research Lab, and Cyber-security and Wireless Networking Innovations (CWiNs) Research Lab, and Director of the Graduate Cybersecurity Certificate Program. He also served as PI and Founding Executive Director of the Research Institute for Tactical Autonomy (RITA), the 15th University Affiliated Research Center (UARC) of the U.S. Department of Defense. His research focuses on cybersecurity, artificial intelligence and machine learning, big data analytics, wireless networking, cyber‑physical systems, IoT, smart cities, software‑defined systems, and vehicular networks. Dr. Rawat has secured more than $110 million in research funding as PI and over $18 million as Co‑PI from federal agencies, industry, and foundations. He is a recipient of numerous honors including the NSF CAREER Award, DHS Scientific Leadership Award, Howard University President’s Medal of Achievement, Provost’s Distinguished Service Award, and multiple best paper awards. He has published more than 400 scholarly articles and 11 books, supervised 45 PhD graduates, mentored over 120 minority undergraduate students, and serves in editorial and leadership roles across major IEEE, ACM, and international research communities. Dr. Rawat earned his Ph.D. from Old Dominion University and is a Fellow of AAAS and IET, an ACM Distinguished Speaker, and an IEEE Distinguished Lecturer.</p>
+
+          <p><span class="font-semibold">Research Interests:</span> Quantum networking, quantum computing, cyber-physical systems, AI/ML, networking, cybersecurity, and secure distributed systems.</p>
+          <p><span class="font-semibold">Leadership Roles:</span> Center PI of the IBM-HBCU Quantum Center and has successfully led multi-institutional research and workforce initiatives such as CoE-AIML, RITA UARC, Data Science & Cybersecurity Center, etc..</p>
+          <p><span class="font-semibold">Major Achievements:</span> Received $110 million as PI and $20 million as Co-PI from federal agencies and leading tech industrices. AAAS Fellow, IET Fellow, IEEE and ACM Senior Member, and 400+ research publications, 11 books, graduated 45 PhDs and 30+ MS students, mentored 10 Postdocs and 200+ undergraduate students. More infor can be found at <a href=https:/www.Rawat.info> Rawat's Webpage <a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research & Projects (simple cards placeholder) -->
+    <section id="research" class="border-t border-slate-200 pt-8">
+      <h2 class="text-2xl font-semibold mb-4">Research & Projects</h2>
+      <p class="text-sm text-slate-700 mb-4">
+        The Center supports faculty seed awards, Scholars-in-Residence, FOQUS training,
+        Quantum Noir conference participation, curriculum development, and K-12 outreach
+        across 27 HBCUs.
+      </p>
+      <div class="grid md:grid-cols-3 gap-4 text-sm">
+        <article class="bg-white border border-slate-200 rounded-lg p-4 shadow-sm">
+          <h3 class="font-semibold mb-1">Faculty Seed Awards</h3>
+          <p class="text-slate-700">
+            Competitive awards of $50K–$150K for collaborative QISE projects across regions,
+            supporting students, travel, and research infrastructure.
+          </p>
+        </article>
+        <article class="bg-white border border-slate-200 rounded-lg p-4 shadow-sm">
+          <h3 class="font-semibold mb-1">Scholars-in-Residence</h3>
+          <p class="text-slate-700">
+            Embedded quantum researchers at key institutions (e.g., Spelman College) building
+            labs, mentoring students, and leading regional initiatives.
+          </p>
+        </article>
+        <article class="bg-white border border-slate-200 rounded-lg p-4 shadow-sm">
+          <h3 class="font-semibold mb-1">FOQUS & National Collaborations</h3>
+          <p class="text-slate-700">
+            Faculty training with Brookhaven National Laboratory’s C²QA, Chicago Quantum
+            Exchange, Yale ASCEND, Duke, and other partners.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Statistics & Dashboards -->
+    <section id="stats" class="border-t border-slate-200 pt-8">
+      <h2 class="text-2xl font-semibold mb-4">Impact Dashboards</h2>
+      <p class="text-sm text-slate-700 mb-4">
+        Visualizing growth in publications, funding, student participation, and outreach
+        over the 2020–2026 program period.
+      </p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white border border-slate-200 rounded-lg p-4 shadow-sm">
+          <h3 class="font-semibold text-sm mb-2">Publications by Year</h3>
+          <canvas id="pubChart" height="200"></canvas>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-lg p-4 shadow-sm">
+          <h3 class="font-semibold text-sm mb-2">External Funding in Million (Approx.)</h3>
+          <canvas id="fundChart" height="200"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications (simple table placeholder) -->
+    <section id="publications" class="border-t border-slate-200 pt-8">
+      <h2 class="text-2xl font-semibold mb-4">Selected Student Highlights</h2>
+      <p class="text-sm text-slate-700 mb-4">
+        Students across HBCUs have earned grants, awards, and fellowships, and progressed
+        to advanced degrees and impactful careers.
+      </p>
+      <div class="overflow-x-auto bg-white border border-slate-200 rounded-lg shadow-sm">
+        <table class="min-w-full text-sm">
+          <thead class="bg-slate-100">
+            <tr>
+              <th class="px-3 py-2 text-left">Student</th>
+              <th class="px-3 py-2 text-left">Institution</th>
+              <th class="px-3 py-2 text-left">Level</th>
+              <th class="px-3 py-2 text-left">Achievement</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="px-3 py-2">Robert Coleman</td>
+              <td class="px-3 py-2">Howard University</td>
+              <td class="px-3 py-2">PhD</td>
+              <td class="px-3 py-2">$100K ARO grant; Quantum Noir poster; PhD defense in 2026.</td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-3 py-2">Niya McWhirter-Hall</td>
+              <td class="px-3 py-2">Spelman College</td>
+              <td class="px-3 py-2">UG</td>
+              <td class="px-3 py-2">1st place, Spelman Research Day for quantum optics work.</td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-3 py-2">Tiarna Wise</td>
+              <td class="px-3 py-2">Coppin State University</td>
+              <td class="px-3 py-2">BS</td>
+              <td class="px-3 py-2">DFT calculations; Open Quantum Initiative Fellowship at University of Chicago.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+<section id="participants" class="border-t border-slate-200 pt-12 pb-16">
+  <h2 class="text-3xl font-bold mb-6">Participants Directory</h2>
+  <p class="text-slate-700 mb-8 text-sm">
+    This directory includes all faculty, students, staff, postdocs, scholars-in-residence,
+    advisory board members, and program participants mentioned in the IBM-HBCU Quantum Center
+    Final Report (2020–2026).
+  </p>
+
+  <!-- Advisory Board -->
+  <details class="mb-6 bg-white border border-slate-200 rounded-lg p-4 shadow-sm">
+    <summary class="cursor-pointer text-xl font-semibold text-slate-900">
+      Advisory Board
+    </summary>
+    <div class="mt-4 grid md:grid-cols-2 gap-4 text-sm text-slate-700">
+      <p><strong>Charles Brown</strong> — UC Berkeley</p>
+      <p><strong>Reginald DesRosches</strong> — Rice University</p>
+      <p><strong>Serena Eley</strong> — Colorado School of Mines</p>
+      <p><strong>Jay Gambetta</strong> — IBM Fellow & VP of Quantum Computing</p>
+      <p><strong>Boubacar Kanté</strong> — UC Berkeley</p>
+      <p><strong>Donnel Walton</strong> — Corning Incorporated</p>
+      <p><strong>James Whitfield</strong> — Dartmouth</p>
+      <p><strong>Bill Wilson</strong> — Harvard Center for Nanoscale Systems</p>
+    </div>
+  </details>
+
+  <!-- Scholars-in-Residence -->
+  <details class="mb-6 bg-white border border-slate-200 rounded-lg p-4 shadow-sm">
+    <summary class="cursor-pointer text-xl font-semibold text-slate-900">
+      Scholars-in-Residence
+    </summary>
+    <div class="mt-4 grid md:grid-cols-2 gap-4 text-sm text-slate-700">
+      <p><strong>Dr. Yanhua Zhai</strong> — Spelman College (Quantum Optics Lab Lead)</p>
+      <p><strong>Future planned scholars:</strong> Howard University, North Carolina A&T, Norfolk State University, Tuskegee University</p>
+    </div>
+  </details>
+
+  <!-- Faculty Participants -->
+  <details class="mb-6 bg-white border border-slate-200 rounded-lg p-4 shadow-sm">
+    <summary class="cursor-pointer text-xl font-semibold text-slate-900">
+      Faculty Participants
+    </summary>
+    <div class="mt-4 grid md:grid-cols-2 gap-4 text-sm text-slate-700">
+
+      <p><strong>Prof. Tianxi Zhang</strong> — Alabama A&M University</p>
+      <p><strong>Prof. Sugata Chowdhury</strong> — Howard University</p>
+      <p><strong>Prof. Eric Seabron</strong> — Howard University</p>
+      <p><strong>Prof. X. Simon Wang</strong> — Howard University</p>
+      <p><strong>Prof. Lijun Qian</strong> — Prairie View A&M University</p>
+      <p><strong>Prof. Yanhua Zhai</strong> — Spelman College</p>
+      <p><strong>Prof. Xiao Chang</strong> — Tuskegee University</p>
+      <p><strong>Prof. Bourama Toni</strong> — Howard University</p>
+      <p><strong>Prof. Stephen Providence</strong> — Coppin State University</p>
+      <p><strong>Prof. Yen-Hung Hu</strong> — Norfolk State University</p>
+      <p><strong>Prof. Dhananjay Santamore</strong> — Delaware State University</p>
+
+      <!-- Additional faculty from programs -->
+      <p><strong>Dr. Chaobin Liu</strong> — Bowie State University</p>
+      <p><strong>Dr. Thomas Searles</strong> — UIC (Co-Founder, Writing Retreat Lead)</p>
+      <p><strong>Dr. Sonya Snedecor</strong> — Science Clarity</p>
+      <p><strong>Dr. Carleitta Paige-Anderson</strong> — NSF</p>
+      <p><strong>Dr. Subrata Acharya</strong> — NSF</p>
+      <p><strong>Dr. Tomasz Durakiewicz</strong> — NSF</p>
+      <p><strong>Dr. Narbe Kalantarians</strong> — Virginia Union University</p>
+      <p><strong>Dr. Dev Pratibha</strong> — Howard University</p>
+      <p><strong>Dr. Dale R. Henry</strong> — PRISSEM</p>
+      <p><strong>Dr. Susan Hoban</strong> — UMBC</p>
+      <p><strong>Dr. Dwight Anderson Williams II</strong> — Morgan State University</p>
+
+    </div>
+  </details>
+
+  <!-- Student Participants -->
+  <details class="mb-6 bg-white border border-slate-200 rounded-lg p-4 shadow-sm">
+    <summary class="cursor-pointer text-xl font-semibold text-slate-900">
+      Student Participants
+    </summary>
+    <div class="mt-4 grid md:grid-cols-2 gap-4 text-sm text-slate-700">
+
+      <p><strong>Robert Coleman</strong> — Howard University — PhD — $100K ARO grant</p>
+      <p><strong>Italian Johnson</strong> — Jackson State University — PhD — Accepted to Rice University</p>
+      <p><strong>Noora Al-Sultani</strong> — Howard University — PhD</p>
+      <p><strong>Taoreed Akinola</strong> — Prairie View A&M — MS→PhD</p>
+      <p><strong>Joshua Littleton</strong> — Prairie View A&M — MS — Government position</p>
+      <p><strong>Niya McWhirter-Hall</strong> — Spelman College — UG — 1st place Research Day</p>
+      <p><strong>DeAngelo Bailey</strong> — Alabama A&M — UG — Josephson junction research</p>
+      <p><strong>Brian Papandrea</strong> — Alabama A&M — PhD — Superconducting qubits</p>
+      <p><strong>Jason Papandrea</strong> — Alabama A&M — PhD — Quantum devices</p>
+      <p><strong>Alana Okullo</strong> — Howard University — PhD — Kitaev interactions</p>
+      <p><strong>Gadeer Alqasseri</strong> — Howard University — PhD — ML for ultrafast spin dynamics</p>
+      <p><strong>Aneyah Nieves</strong> — Howard University — UG — Quantum materials</p>
+      <p><strong>Kevaughn Johnson</strong> — Howard University — UG — Quantum materials</p>
+      <p><strong>Tiarna Wise</strong> — Coppin State — BS — OQI Fellowship</p>
+      <p><strong>Micah Gillett</strong> — Tuskegee University — UG — Quantum Noir presenter</p>
+
+      <!-- Additional students from programs -->
+      <p><strong>James Griffin</strong> — Coppin State — OQI Fellowship</p>
+      <p><strong>Raissa Abdoul-Tata</strong> — Quantum Noir presenter</p>
+      <p><strong>Solomon</strong> — Quantum Noir presenter</p>
+      <p><strong>Yekeh</strong> — Quantum Noir presenter</p>
+      <p><strong>Flanigan</strong> — Quantum Noir presenter</p>
+
+    </div>
+  </details>
+
+  <!-- Staff & Program Personnel -->
+  <details class="mb-6 bg-white border border-slate-200 rounded-lg p-4 shadow-sm">
+    <summary class="cursor-pointer text-xl font-semibold text-slate-900">
+      Staff & Program Personnel
+    </summary>
+    <div class="mt-4 grid md:grid-cols-2 gap-4 text-sm text-slate-700">
+      <p><strong>Dr. Danda B. Rawat</strong> — Center PI/Director, IBM-HBCU Quantum Center</p>
+	<p><strong>Dr. Su Yan </strong> — Previous PI/Director, IBM-HBCU Quantum Center</p>
+	<p><strong>Dr. Thomas Searles</strong> — Previous PI/Director, IBM-HBCU Quantum Center</p>
+      <p><strong>Kayla Lee, PhD</strong> — IBM Head of Quantum Programs & Ecosystem</p>
+      <p><strong>Benita Zazueta</strong> — IBM Quantum Team</p>
+      <p><strong>David Biersach</strong> — Brookhaven National Laboratory (QIS Course Lead)</p>
+      <p><strong>PRISSEM Academic Services Team</strong> — Writing Retreat Support</p>
+    </div>
+  </details>
+
+  <!-- Program Participants (FOQUS, QAA, QERS, etc.) -->
+  <details class="mb-6 bg-white border border-slate-200 rounded-lg p-4 shadow-sm">
+    <summary class="cursor-pointer text-xl font-semibold text-slate-900">
+      Program Participants (FOQUS, QAA, QERS, Quantum Noir, Outreach)
+    </summary>
+    <div class="mt-4 text-sm text-slate-700 space-y-2">
+
+      <p><strong>FOQUS Faculty:</strong> Spelman, Tuskegee, Prairie View A&M, Howard University faculty</p>
+      <p><strong>QAA Participants:</strong> HBCU faculty attending UCLA Quantum Advantage Academy</p>
+      <p><strong>Quantum Noir Presenters:</strong> Robert Coleman, Micah Gillett, Taoreed Akinola, Raissa Abdoul‑Tata, Solomon, Yekeh, Flanigan</p>
+      <p><strong>QERS Participants:</strong> Faculty and students from 27 HBCUs</p>
+      <p><strong>K‑12 Outreach Teams:</strong> Howard University, RPI, Southern University, Coppin State, Prairie View A&M, Dillard University</p>
+
+    </div>
+  </details>
+
+</section>
+
+
+
+
+
+    <!-- Contact -->
+    <section id="contact" class="border-t border-slate-200 pt-8">
+      <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+      <div class="grid md:grid-cols-2 gap-6 text-sm text-slate-700">
+        <div>
+          <p class="font-semibold">IBM-HBCU Quantum Center</p>
+          <p>Howard University (Lead Institution)</p>
+          <p class="mt-2">Email: info@hbcu-quantum-center.example.org</p>
+          <p>Address: Washington, DC, USA</p>
+        </div>
+        <form class="space-y-3">
+          <div>
+            <label class="block text-xs font-medium text-slate-600">Name</label>
+            <input type="text" class="mt-1 w-full border border-slate-300 rounded px-2 py-1 text-sm" />
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-slate-600">Email</label>
+            <input type="email" class="mt-1 w-full border border-slate-300 rounded px-2 py-1 text-sm" />
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-slate-600">Message</label>
+            <textarea class="mt-1 w-full border border-slate-300 rounded px-2 py-1 text-sm" rows="3"></textarea>
+          </div>
+          <button type="submit"
+                  class="inline-flex items-center px-4 py-2 rounded bg-[#003A63] text-white text-sm font-medium hover:bg-[#002B4A]">
+            Send Inquiry
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-8 bg-slate-900 text-slate-300 text-xs">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap justify-between gap-2">
+      <p>© 2026 IBM-HBCU Quantum Center. All rights reserved.</p>
+      <p>Powered by modern web technologies for research and education.</p>
+    </div>
+  </footer>
+
+  <!-- Simple Chart.js setup -->
+  <script>
+    // Publications chart (dummy data – replace with real counts per year)
+    const pubCtx = document.getElementById('pubChart').getContext('2d');
+    new Chart(pubCtx, {
+      type: 'line',
+      data: {
+        labels: ['2020', '2021', '2022', '2023', '2024', '2025', '2026'],
+        datasets: [{
+          label: 'Publications',
+          data: [2, 4, 7, 10, 12, 15, 18],
+          borderColor: '#003A63',
+          backgroundColor: 'rgba(0, 58, 99, 0.1)',
+          tension: 0.3
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { beginAtZero: true }
+        }
+      }
+    });
+
+    // Funding chart (approximate growth – adjust to real data)
+    const fundCtx = document.getElementById('fundChart').getContext('2d');
+    new Chart(fundCtx, {
+      type: 'bar',
+      data: {
+        labels: ['2020', '2021', '2022', '2023', '2024', '2025', '2026'],
+        datasets: [{
+          label: 'External Funding (M USD)',
+          data: [1, 3, 5, 8, 12, 16, 20],
+          backgroundColor: '#fbbf24'
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { beginAtZero: true }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
